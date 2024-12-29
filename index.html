@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <script type="module" src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <!-- <script type="module" src="https://www.gstatic.com/firebasejs/11.6.2/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/11.6.2/firebase-database.js"></script> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מי כעמך ישראל</title>
+</head>
+<body>
+    <!-- כותרת ראשית -->
+    <div class="main-title">
+        <h1>לא מוותרים על אלי פלדשטיין  - אליעזר בן בינה!!!!</h1>
+        <p>בברכת הרה"ג שמעון גלאי שליט"א מצטרפים לומר פרקי כ' בתהילים להצלתו וישועתו השלמה
+        </p>
+    </div>
+
+    <!-- רקע עם לבבות -->
+    <div class="background">
+        <p id="counterArc" class="counter-arc">פרקי כ' כבר נאמרו</p>
+        <div id="counter" class="counter">0</div>
+        <button id="addButton" class="btn">מצטרפים בכל הכח</button>
+    </div>
+
+    <!-- טופס הצטרפות -->
+    <div id="formSection" class="form hidden">
+        <input type="text" id="nameInput" placeholder="שם" required>
+        <input type="number" id="chaptersInput" placeholder="מספר פרקי כ' שאת/ה מקדיש לזכותו" required>
+        <input type="text" id="commentInput" placeholder="קבלה טובה:) ניתן לרשום גם בכלליות - הקבלה תופיע באתר בעילום שם "
+            required>
+        <button id="submitButton" class="btn" onclick="submitFormData()">שלח</button>
+    </div>
+
+    <!-- הודעת תודה אחרי שליחה -->
+    <div id="thankYouMessage" class="thank-you hidden">
+        <p>תודה שאת/ה חלק! המשך/י לשתף בכל הכח !!!</p>
+    </div>
+
+    <!-- תגובות החברים -->
+    <div id="commentsSection" class="comments-section">
+        <h2>קבלות טובות לזכותו:)</h2>
+        <div id="comments"></div>
+    </div>
+</body>
+<footer class="footer">
+    <p>Built by <a href="mailto:etic286@gmail.com">etic286@gmail.com</a> with great love for Am Israel
+    </p>
+</footer>
+</html>
